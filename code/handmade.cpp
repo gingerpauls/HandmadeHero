@@ -8,7 +8,11 @@ int WinMain(HINSTANCE hInstance,
             int       nShowCmd)
 {
 
-    MessageBoxA(0, "Are you sure?", "Confirm", MB_YESNO | MB_ICONQUESTION);
+    MessageBoxA(0, "Are you sure?", "Confirm", 
+                    MB_YESNO 
+                |   MB_ICONQUESTION 
+                |   MB_DEFBUTTON1 
+                );
 
     return 0;
 }
